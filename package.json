@@ -2,7 +2,7 @@
   "name": "lambda-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -11,15 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "@types/aws-lambda": "^8.10.6",
-    "@types/aws-sdk": "^2.7.0",
     "@types/node": "^10.3.0",
-    "aws-sdk": "^2.250.1",
     "ts-loader": "^4.3.1",
     "tslint": "^5.10.0",
     "typescript": "^2.9.1",
     "webpack": "^4.10.2"
   },
   "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "aws-sdk": "^2.250.1",
     "webpack-command": "^0.2.0"
   }
 }

@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     target: 'node',
     entry: {
-        index: './src/index.ts'
+        index: './index.ts'
     },
     output: {
         filename: '[name].js',

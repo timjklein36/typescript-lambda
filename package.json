@@ -1,5 +1,5 @@
 {
-  "name": "lambda-test",
+  "name": "typescript-lambda",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",

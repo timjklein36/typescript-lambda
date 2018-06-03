@@ -1,5 +1,6 @@
 # deployment artifcats
 deploy
+dist
 
 # Logs
 logs

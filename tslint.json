@@ -5,7 +5,12 @@
     ],
     "jsRules": {},
     "rules": {
+        "member-access": [
+            true,
+            "no-public"
+        ],
         "no-console": false,
+        "no-empty": false,
         "object-literal-sort-keys": [
             true,
             "match-declaration-order"

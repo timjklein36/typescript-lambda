@@ -15,9 +15,9 @@ export function Lambda(options: LambdaOptions) {
     return <T extends { new (...args: any[]): {} }> (target: T) => {
         console.log(`Registered ${options.name} as a Lambda`);
         return class extends target {
-            public event: APIGatewayProxyEvent;
-            public context: Context;
-            public callback: APIGatewayProxyCallback;
+            event: APIGatewayProxyEvent;
+            context: Context;
+            callback: APIGatewayProxyCallback;
 
             constructor(...args: any[]) {
                 super();

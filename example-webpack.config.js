@@ -4,14 +4,13 @@ const fs = require('fs');
 module.exports = {
     mode: 'development',
     target: 'node',
-    entry: {
-        index: './src/index.ts'
-    },
+    entry: getLambdas(),
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'deploy'),
         libraryTarget: 'commonjs'
     },
+    externals: ['aws-sdk'],
     module: {
         rules: [
             {
@@ -28,3 +27,11 @@ module.exports = {
         ]
     },
 };
+
+function getLambdas() {
+    const entry = {};
+    fs.readdirSync('./lambdas/').forEach((fileName) => {
+        entry[fileName.replace('.ts', '')] = './lambdas/' + fileName;
+    });
+    return entry;
+}

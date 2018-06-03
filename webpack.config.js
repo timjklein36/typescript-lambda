@@ -6,7 +6,7 @@ module.exports = {
     target: 'node',
     entry: getLambdas(),
     output: {
-        filename: '[name].deploy.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'deploy'),
         libraryTarget: 'commonjs'
     },

@@ -94,31 +94,31 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar APIGatewayLambdaHandler_1 = __webpack_require__(/*! ./src/APIGatewayLambdaHandler */ \"./src/APIGatewayLambdaHandler.ts\");\nexports.APIGatewayLambdaHandler = APIGatewayLambdaHandler_1.APIGatewayLambdaHandler;\nvar APIGatewayProxyEventObject_1 = __webpack_require__(/*! ./src/APIGatewayProxyEventObject */ \"./src/APIGatewayProxyEventObject.ts\");\nexports.APIGatewayProxyEventObject = APIGatewayProxyEventObject_1.APIGatewayProxyEventObject;\nvar APIGatewayProxyLambda_1 = __webpack_require__(/*! ./src/APIGatewayProxyLambda */ \"./src/APIGatewayProxyLambda.ts\");\nexports.APIGatewayProxyLambda = APIGatewayProxyLambda_1.APIGatewayProxyLambda;\nvar CloudFrontRequestLambda_1 = __webpack_require__(/*! ./src/CloudFrontRequestLambda */ \"./src/CloudFrontRequestLambda.ts\");\nexports.CloudFrontRequestLambda = CloudFrontRequestLambda_1.CloudFrontRequestLambda;\nvar CloudFrontRequestLambdaHandler_1 = __webpack_require__(/*! ./src/CloudFrontRequestLambdaHandler */ \"./src/CloudFrontRequestLambdaHandler.ts\");\nexports.CloudFrontRequestLambdaHandler = CloudFrontRequestLambdaHandler_1.CloudFrontRequestLambdaHandler;\nvar GenericLambda_1 = __webpack_require__(/*! ./src/GenericLambda */ \"./src/GenericLambda.ts\");\nexports.GenericLambda = GenericLambda_1.GenericLambda;\nvar Lambda_1 = __webpack_require__(/*! ./src/Lambda */ \"./src/Lambda.ts\");\nexports.Lambda = Lambda_1.Lambda;\nvar LambdaOptions_1 = __webpack_require__(/*! ./src/LambdaOptions */ \"./src/LambdaOptions.ts\");\nexports.LambdaOptions = LambdaOptions_1.LambdaOptions;\n\n\n//# sourceURL=webpack:///./index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar APIGatewayAuthorizerLambda_1 = __webpack_require__(/*! ./src/APIGatewayAuthorizerLambda */ \"./src/APIGatewayAuthorizerLambda.ts\");\nexports.APIGatewayAuthorizerLambda = APIGatewayAuthorizerLambda_1.APIGatewayAuthorizerLambda;\nvar APIGatewayProxyEvent_1 = __webpack_require__(/*! ./src/APIGatewayProxyEvent */ \"./src/APIGatewayProxyEvent.ts\");\nexports.APIGatewayProxyEvent = APIGatewayProxyEvent_1.APIGatewayProxyEvent;\nvar APIGatewayProxyLambda_1 = __webpack_require__(/*! ./src/APIGatewayProxyLambda */ \"./src/APIGatewayProxyLambda.ts\");\nexports.APIGatewayProxyLambda = APIGatewayProxyLambda_1.APIGatewayProxyLambda;\nvar CloudFrontRequestLambda_1 = __webpack_require__(/*! ./src/CloudFrontRequestLambda */ \"./src/CloudFrontRequestLambda.ts\");\nexports.CloudFrontRequestLambda = CloudFrontRequestLambda_1.CloudFrontRequestLambda;\nvar GenericLambda_1 = __webpack_require__(/*! ./src/GenericLambda */ \"./src/GenericLambda.ts\");\nexports.GenericLambda = GenericLambda_1.GenericLambda;\nvar Lambda_1 = __webpack_require__(/*! ./src/Lambda */ \"./src/Lambda.ts\");\nexports.Lambda = Lambda_1.Lambda;\nvar LambdaHandler_1 = __webpack_require__(/*! ./src/LambdaHandler */ \"./src/LambdaHandler.ts\");\nexports.LambdaHandler = LambdaHandler_1.LambdaHandler;\nvar LambdaOptions_1 = __webpack_require__(/*! ./src/LambdaOptions */ \"./src/LambdaOptions.ts\");\nexports.LambdaOptions = LambdaOptions_1.LambdaOptions;\n\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ }),
 
-/***/ "./src/APIGatewayLambdaHandler.ts":
-/*!****************************************!*\
-  !*** ./src/APIGatewayLambdaHandler.ts ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass APIGatewayLambdaHandler {\n    static generate(type) {\n        const handler = (event, context, callback) => {\n            new type(event, context, callback).handler();\n        };\n        return handler;\n    }\n}\nexports.APIGatewayLambdaHandler = APIGatewayLambdaHandler;\n\n\n//# sourceURL=webpack:///./src/APIGatewayLambdaHandler.ts?");
-
-/***/ }),
-
-/***/ "./src/APIGatewayProxyEventObject.ts":
+/***/ "./src/APIGatewayAuthorizerLambda.ts":
 /*!*******************************************!*\
-  !*** ./src/APIGatewayProxyEventObject.ts ***!
+  !*** ./src/APIGatewayAuthorizerLambda.ts ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass APIGatewayProxyEventObject {\n    constructor() { }\n}\nexports.APIGatewayProxyEventObject = APIGatewayProxyEventObject;\n\n\n//# sourceURL=webpack:///./src/APIGatewayProxyEventObject.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst GenericLambda_1 = __webpack_require__(/*! ./GenericLambda */ \"./src/GenericLambda.ts\");\nclass APIGatewayAuthorizerLambda extends GenericLambda_1.GenericLambda {\n}\nexports.APIGatewayAuthorizerLambda = APIGatewayAuthorizerLambda;\n\n\n//# sourceURL=webpack:///./src/APIGatewayAuthorizerLambda.ts?");
+
+/***/ }),
+
+/***/ "./src/APIGatewayProxyEvent.ts":
+/*!*************************************!*\
+  !*** ./src/APIGatewayProxyEvent.ts ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass APIGatewayProxyEvent {\n    constructor() { }\n}\nexports.APIGatewayProxyEvent = APIGatewayProxyEvent;\n\n\n//# sourceURL=webpack:///./src/APIGatewayProxyEvent.ts?");
 
 /***/ }),
 
@@ -146,18 +146,6 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst 
 
 /***/ }),
 
-/***/ "./src/CloudFrontRequestLambdaHandler.ts":
-/*!***********************************************!*\
-  !*** ./src/CloudFrontRequestLambdaHandler.ts ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass CloudFrontRequestLambdaHandler {\n    static generate(type) {\n        const handler = (event, context, callback) => {\n            new type(event, context, callback).handler();\n        };\n        return handler;\n    }\n}\nexports.CloudFrontRequestLambdaHandler = CloudFrontRequestLambdaHandler;\n\n\n//# sourceURL=webpack:///./src/CloudFrontRequestLambdaHandler.ts?");
-
-/***/ }),
-
 /***/ "./src/GenericLambda.ts":
 /*!******************************!*\
   !*** ./src/GenericLambda.ts ***!
@@ -179,6 +167,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass 
 
 "use strict";
 eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nfunction Lambda(options) {\n    return (target) => {\n        console.log(`Registered ${options.name} as a Lambda`);\n        return class extends target {\n            constructor(...args) {\n                super();\n                this.event = args[0];\n                this.context = args[1];\n                this.callback = args[2];\n            }\n        };\n    };\n}\nexports.Lambda = Lambda;\n\n\n//# sourceURL=webpack:///./src/Lambda.ts?");
+
+/***/ }),
+
+/***/ "./src/LambdaHandler.ts":
+/*!******************************!*\
+  !*** ./src/LambdaHandler.ts ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass LambdaHandler {\n    static generate(type) {\n        const handler = (event, context, callback) => {\n            new type(event, context, callback).handler();\n        };\n        return handler;\n    }\n}\nexports.LambdaHandler = LambdaHandler;\n\n\n//# sourceURL=webpack:///./src/LambdaHandler.ts?");
 
 /***/ }),
 

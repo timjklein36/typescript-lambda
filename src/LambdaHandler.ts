@@ -1,18 +1,16 @@
 import {
-    APIGatewayProxyEvent,
     Callback,
     Context,
-    CustomAuthorizerEvent,
     Handler,
 } from 'aws-lambda';
 import { GenericLambda } from './GenericLambda';
 
-export class APIGatewayLambdaHandler {
+export class LambdaHandler {
     static generate<T extends GenericLambda>(type: { new (...args: any[]): T }) {
         const handler: Handler = (
-            event: APIGatewayProxyEvent | CustomAuthorizerEvent,
+            event: any,
             context: Context,
-            callback: Callback,
+            callback: Callback<any>,
         ) => {
             new type(event, context, callback).handler();
         };

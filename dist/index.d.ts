@@ -1,8 +1,8 @@
-export { APIGatewayLambdaHandler } from './src/APIGatewayLambdaHandler';
-export { APIGatewayProxyEventObject } from './src/APIGatewayProxyEventObject';
+export { APIGatewayAuthorizerLambda } from './src/APIGatewayAuthorizerLambda';
+export { APIGatewayProxyEvent } from './src/APIGatewayProxyEvent';
 export { APIGatewayProxyLambda } from './src/APIGatewayProxyLambda';
 export { CloudFrontRequestLambda } from './src/CloudFrontRequestLambda';
-export { CloudFrontRequestLambdaHandler } from './src/CloudFrontRequestLambdaHandler';
 export { GenericLambda } from './src/GenericLambda';
 export { Lambda } from './src/Lambda';
+export { LambdaHandler } from './src/LambdaHandler';
 export { LambdaOptions } from './src/LambdaOptions';

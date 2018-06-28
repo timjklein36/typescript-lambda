@@ -1,6 +1,9 @@
-import { APIGatewayEventRequestContext, APIGatewayProxyEvent } from 'aws-lambda';
+import {
+    APIGatewayEventRequestContext,
+    APIGatewayProxyEvent as ProxyEventInterface,
+} from 'aws-lambda';
 
-export class APIGatewayProxyEventObject implements APIGatewayProxyEvent {
+export class APIGatewayProxyEvent implements ProxyEventInterface {
     body: string;
     headers: { [name: string]: string };
     httpMethod: string;

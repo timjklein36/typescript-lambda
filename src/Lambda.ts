@@ -1,12 +1,5 @@
 import {
-    APIGatewayProxyCallback,
-    APIGatewayProxyEvent,
-    APIGatewayProxyHandler,
-    APIGatewayProxyResult,
     Callback,
-    CloudFrontRequestCallback,
-    CloudFrontRequestEvent,
-    CloudFrontRequestHandler,
     Context,
 } from 'aws-lambda';
 import { LambdaOptions } from './LambdaOptions';
@@ -15,9 +8,9 @@ export function Lambda(options: LambdaOptions) {
     return <T extends { new (...args: any[]): {} }> (target: T) => {
         console.log(`Registered ${options.name} as a Lambda`);
         return class extends target {
-            event: APIGatewayProxyEvent;
+            event: any;
             context: Context;
-            callback: APIGatewayProxyCallback;
+            callback: Callback<any>;
 
             constructor(...args: any[]) {
                 super();

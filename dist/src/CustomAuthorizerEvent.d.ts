@@ -1,4 +1,5 @@
-import { APIGatewayEventRequestContext, CustomAuthorizerEvent as AuthorizerEvent } from 'aws-lambda';
+import { CustomAuthorizerEvent as AuthorizerEvent } from 'aws-lambda';
+import { APIGatewayEventRequestContext } from './APIGatewayEventRequestContext';
 export declare class CustomAuthorizerEvent implements AuthorizerEvent {
     type: string;
     methodArn: string;

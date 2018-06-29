@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar APIGatewayAuthorizerLambda_1 = __webpack_require__(/*! ./src/APIGatewayAuthorizerLambda */ \"./src/APIGatewayAuthorizerLambda.ts\");\nexports.APIGatewayAuthorizerLambda = APIGatewayAuthorizerLambda_1.APIGatewayAuthorizerLambda;\nvar APIGatewayProxyEvent_1 = __webpack_require__(/*! ./src/APIGatewayProxyEvent */ \"./src/APIGatewayProxyEvent.ts\");\nexports.APIGatewayProxyEvent = APIGatewayProxyEvent_1.APIGatewayProxyEvent;\nvar APIGatewayProxyLambda_1 = __webpack_require__(/*! ./src/APIGatewayProxyLambda */ \"./src/APIGatewayProxyLambda.ts\");\nexports.APIGatewayProxyLambda = APIGatewayProxyLambda_1.APIGatewayProxyLambda;\nvar CloudFrontRequestLambda_1 = __webpack_require__(/*! ./src/CloudFrontRequestLambda */ \"./src/CloudFrontRequestLambda.ts\");\nexports.CloudFrontRequestLambda = CloudFrontRequestLambda_1.CloudFrontRequestLambda;\nvar CustomAuthorizerEvent_1 = __webpack_require__(/*! ./src/CustomAuthorizerEvent */ \"./src/CustomAuthorizerEvent.ts\");\nexports.CustomAuthorizerEvent = CustomAuthorizerEvent_1.CustomAuthorizerEvent;\nvar GenericLambda_1 = __webpack_require__(/*! ./src/GenericLambda */ \"./src/GenericLambda.ts\");\nexports.GenericLambda = GenericLambda_1.GenericLambda;\nvar Lambda_1 = __webpack_require__(/*! ./src/Lambda */ \"./src/Lambda.ts\");\nexports.Lambda = Lambda_1.Lambda;\nvar LambdaHandler_1 = __webpack_require__(/*! ./src/LambdaHandler */ \"./src/LambdaHandler.ts\");\nexports.LambdaHandler = LambdaHandler_1.LambdaHandler;\nvar LambdaOptions_1 = __webpack_require__(/*! ./src/LambdaOptions */ \"./src/LambdaOptions.ts\");\nexports.LambdaOptions = LambdaOptions_1.LambdaOptions;\n\n\n//# sourceURL=webpack:///./index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar APIGatewayAuthorizerLambda_1 = __webpack_require__(/*! ./src/APIGatewayAuthorizerLambda */ \"./src/APIGatewayAuthorizerLambda.ts\");\nexports.APIGatewayAuthorizerLambda = APIGatewayAuthorizerLambda_1.APIGatewayAuthorizerLambda;\nvar APIGatewayEventRequestContext_1 = __webpack_require__(/*! ./src/APIGatewayEventRequestContext */ \"./src/APIGatewayEventRequestContext.ts\");\nexports.APIGatewayEventRequestContext = APIGatewayEventRequestContext_1.APIGatewayEventRequestContext;\nvar APIGatewayProxyEvent_1 = __webpack_require__(/*! ./src/APIGatewayProxyEvent */ \"./src/APIGatewayProxyEvent.ts\");\nexports.APIGatewayProxyEvent = APIGatewayProxyEvent_1.APIGatewayProxyEvent;\nvar APIGatewayProxyLambda_1 = __webpack_require__(/*! ./src/APIGatewayProxyLambda */ \"./src/APIGatewayProxyLambda.ts\");\nexports.APIGatewayProxyLambda = APIGatewayProxyLambda_1.APIGatewayProxyLambda;\nvar CloudFrontRequestLambda_1 = __webpack_require__(/*! ./src/CloudFrontRequestLambda */ \"./src/CloudFrontRequestLambda.ts\");\nexports.CloudFrontRequestLambda = CloudFrontRequestLambda_1.CloudFrontRequestLambda;\nvar CustomAuthorizerEvent_1 = __webpack_require__(/*! ./src/CustomAuthorizerEvent */ \"./src/CustomAuthorizerEvent.ts\");\nexports.CustomAuthorizerEvent = CustomAuthorizerEvent_1.CustomAuthorizerEvent;\nvar GenericLambda_1 = __webpack_require__(/*! ./src/GenericLambda */ \"./src/GenericLambda.ts\");\nexports.GenericLambda = GenericLambda_1.GenericLambda;\nvar Lambda_1 = __webpack_require__(/*! ./src/Lambda */ \"./src/Lambda.ts\");\nexports.Lambda = Lambda_1.Lambda;\nvar LambdaHandler_1 = __webpack_require__(/*! ./src/LambdaHandler */ \"./src/LambdaHandler.ts\");\nexports.LambdaHandler = LambdaHandler_1.LambdaHandler;\nvar LambdaOptions_1 = __webpack_require__(/*! ./src/LambdaOptions */ \"./src/LambdaOptions.ts\");\nexports.LambdaOptions = LambdaOptions_1.LambdaOptions;\n\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar AP
 
 "use strict";
 eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst GenericLambda_1 = __webpack_require__(/*! ./GenericLambda */ \"./src/GenericLambda.ts\");\nclass APIGatewayAuthorizerLambda extends GenericLambda_1.GenericLambda {\n}\nexports.APIGatewayAuthorizerLambda = APIGatewayAuthorizerLambda;\n\n\n//# sourceURL=webpack:///./src/APIGatewayAuthorizerLambda.ts?");
+
+/***/ }),
+
+/***/ "./src/APIGatewayEventRequestContext.ts":
+/*!**********************************************!*\
+  !*** ./src/APIGatewayEventRequestContext.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass APIGatewayEventRequestContext {\n    constructor() { }\n}\nexports.APIGatewayEventRequestContext = APIGatewayEventRequestContext;\n\n\n//# sourceURL=webpack:///./src/APIGatewayEventRequestContext.ts?");
 
 /***/ }),
 
@@ -154,7 +166,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nclass CustomAuthorizerEvent {\n    constructor() { }\n}\nexports.CustomAuthorizerEvent = CustomAuthorizerEvent;\n\n\n//# sourceURL=webpack:///./src/CustomAuthorizerEvent.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst APIGatewayEventRequestContext_1 = __webpack_require__(/*! ./APIGatewayEventRequestContext */ \"./src/APIGatewayEventRequestContext.ts\");\nclass CustomAuthorizerEvent {\n    constructor() {\n        this.headers = {};\n        this.pathParameters = {};\n        this.queryStringParameters = {};\n        this.requestContext = new APIGatewayEventRequestContext_1.APIGatewayEventRequestContext();\n    }\n}\nexports.CustomAuthorizerEvent = CustomAuthorizerEvent;\n\n\n//# sourceURL=webpack:///./src/CustomAuthorizerEvent.ts?");
 
 /***/ }),
 

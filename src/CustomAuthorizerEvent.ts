@@ -1,7 +1,7 @@
 import {
-    APIGatewayEventRequestContext,
     CustomAuthorizerEvent as AuthorizerEvent,
 } from 'aws-lambda';
+import { APIGatewayEventRequestContext } from './APIGatewayEventRequestContext';
 
 export class CustomAuthorizerEvent implements AuthorizerEvent {
     type: string;
@@ -12,5 +12,10 @@ export class CustomAuthorizerEvent implements AuthorizerEvent {
     queryStringParameters?: { [name: string]: string } | null;
     requestContext?: APIGatewayEventRequestContext;
 
-    constructor() {}
+    constructor() {
+        this.headers = {};
+        this.pathParameters = {};
+        this.queryStringParameters = {};
+        this.requestContext = new APIGatewayEventRequestContext();
+    }
 }
